@@ -543,7 +543,7 @@ class BoletoUtils {
     digito = (soma % 11).toString();
 
     if (int.parse(digito) < 2) {
-      digito = '1';
+      digito = '0';
     } else if (int.parse(digito) >= 2) {
       digito = (11 - int.parse(digito)).toString();
     }
